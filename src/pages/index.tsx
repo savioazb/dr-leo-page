@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="max-w-[1360px] m-auto px-20 py-10">
+      <main>
         <Hero />
         <Sobre />
         <Especialidades />

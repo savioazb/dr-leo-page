@@ -4,9 +4,9 @@ import logo from '../../public/logo-white.svg'
 
 export function Contato() {
   return (
-    <section className="grid grid-cols-2 gap-8 mb-20">
+    <section id="contato" className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-[1360px] m-auto px-4 lg:px-20 py-10">
       <article className="bg-blue py-16 flex flex-col justify-center items-center">
-        <div className="flex flex-col items-start gap-12">
+        <div className="flex flex-col items-center gap-12">
           <div className="flex flex-col gap-4 justify-center items-center">
             <Image src={logo} alt="Doutor Leonardo Marcolino Logo" />
             <h1 className="logo text-white text-lg">
@@ -26,7 +26,7 @@ export function Contato() {
             </div>
           </div>
 
-          <div className="flex items-baseline gap-2">
+          <div className="flex items-baseline gap-2 self-baseline">
             <MapPinLine className="text-white" />
             <div className="flex flex-col justify-start">
               <h2 className="text-white font-bold text-lg">Clínica Osteo</h2>
@@ -53,7 +53,7 @@ export function Contato() {
           <label className="text-blue font-medium text-lg block mb-4" htmlFor="">Selecione o local:</label>
           <input className="block mb-6 rounded-xl border border-border w-[100%] placeholder:text-gray h-14" type="text" name="nome" id="" placeholder="Excolha o local do atendimento" />
 
-          <button className="bg-green text-blue rounded-xl px-8 py-4">Enviar</button>
+          <button className="w-full transition bg-green hover:bg-green-light text-blue rounded-xl px-8 py-4">Enviar</button>
         </form>
       </article>
     </section>

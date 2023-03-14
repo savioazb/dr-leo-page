@@ -1,10 +1,11 @@
 import { BsArrowRightShort } from "react-icons/bs";
 import { Wrench, Heartbeat, Activity, FirstAidKit } from "phosphor-react";
+import Link from "next/link";
 
 export function Especialidades() {
   return (
-    <section className="mb-40">
-      <article className="flex gap-12 justify-between mb-20">
+    <section id="especialidades" className="mb-8 max-w-[1360px] m-auto py-10 px-4 md:px-8 lg:px-20">
+      <article className="flex flex-col md:flex-row gap-12 justify-between mb-20 text-center md:text-left">
         <h2 className="text-3xl text-blue">
           Recupere a sua mobilidade e qualidade de vida com o tratamento
           ortopédico adequado
@@ -15,18 +16,18 @@ export function Especialidades() {
             maneiras. Não espere mais para buscar ajuda e agende uma consulta
             com o Dr. Leonardo Marcolino.
           </p>
-          <a className="text-blue flex items-center gap-1 cursor-pointer">
+          <Link href="#contato" className="transition hover:underline text-blue flex items-center justify-center md:justify-start gap-1 cursor-pointer">
             Entre em contato <BsArrowRightShort />
-          </a>
+          </Link>
         </div>
       </article>
       <article>
-        <div className="grid grid-cols-2">
-          <div className="flex items-center py-12 justify-start gap-4 border-b border-r border-border">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col md:flex-row items-center py-12 justify-start gap-4 border-b md:border-r border-border">
             <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
               <Wrench size={32} className="text-blue" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-blue text-lg font-medium">
                 Artroplastia total de quadril
               </h3>
@@ -38,11 +39,11 @@ export function Especialidades() {
               </p>
             </div>
           </div>
-          <div className="flex items-center py-12 justify-end gap-4 border-b border-border">
+          <div className="flex flex-col md:flex-row items-center py-12 justify-start md:justify-center gap-4 border-b  border-border ml-4">
             <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
               <Heartbeat size={32} className="text-blue" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-blue text-lg font-medium">
                 Fraturas da região do quadril
               </h3>
@@ -54,11 +55,11 @@ export function Especialidades() {
               </p>
             </div>
           </div>
-          <div className="flex items-center py-12 justify-start gap-4 border-r border-border">
+          <div className="flex flex-col md:flex-row items-center py-12 justify-start gap-4 border-b md:border-b-0 md:border-r border-border">
             <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
               <Activity size={32} className="text-blue" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-blue text-lg font-medium">
                 Cirurgia preservadora do quadril
               </h3>
@@ -69,11 +70,11 @@ export function Especialidades() {
               </p>
             </div>
           </div>
-          <div className="flex items-center py-12 justify-end gap-4">
+          <div className="flex flex-col md:flex-row items-center py-12 justify-start md:justify-center gap-4 border-b md:border-none border-border ml-4">
             <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
               <FirstAidKit size={32} className="text-blue" />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-blue text-lg font-medium">
                 Cirurgia Ortopédica 4
               </h3>
