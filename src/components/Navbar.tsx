@@ -31,44 +31,42 @@ export function Navbar() {
       </nav>
 
       {/* Mobile Button */}
-      <div onClick={handleNav} className={`flex justify-end sm:hidden z-10 relative ${nav ? 'text-white' : 'text-blue'}`}>
-        {nav ? (
-          <AiOutlineClose size={20}  />
-        ) : (
-          <AiOutlineMenu size={20} />
-        )}
+      <div
+        onClick={handleNav}
+        className={`flex ${nav ? 'justify-end' : 'justify-between'}  sm:hidden z-10 relative ${
+          nav ? "text-white" : "text-blue"
+        }`}
+      >
+        {!nav && <h1 className="logo text-lg">Dr. Leonardo Marcolino</h1>}
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
       <div
-          className={`bg-blue sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300 ${nav ? 'left-0' : 'left-[-100%]'}`}
-        >
-          <ul>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white uppercase"
-            >
-              <Link href="/">Home</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white  uppercase"
-            >
-              <Link href="/#gallery">Gallery</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white  uppercase"
-            >
-              <Link href="/work">Work</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className="p-4 text-4xl text-white uppercase"
-            >
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
+        className={`bg-blue sm:hidden absolute top-0 right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300 ${
+          nav ? "left-0" : "left-[-100%]"
+        }`}
+      >
+        <ul>
+          <li onClick={handleNav} className="p-4 text-4xl text-white uppercase">
+            <Link href="#home">Home</Link>
+          </li>
+          <li
+            onClick={handleNav}
+            className="p-4 text-4xl text-white  uppercase"
+          >
+            <Link href="#sobre">Sobre</Link>
+          </li>
+          <li
+            onClick={handleNav}
+            className="p-4 text-4xl text-white  uppercase"
+          >
+            <Link href="#especialidades">Especialidades</Link>
+          </li>
+          <li onClick={handleNav} className="p-4 text-4xl text-white uppercase">
+            <Link href="#contato">Contato</Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 }

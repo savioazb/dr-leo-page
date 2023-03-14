@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function Hero(){
   return (
-    <section id='home' className="max-w-[1360px] m-auto flex flex-col-reverse md:flex-row justify-center md:justify-between items-center mt-20 mb-40 px-4 md:px-20 py-10">
+    <section id='home' className="max-w-[1360px] m-auto flex flex-col-reverse md:flex-row justify-center md:justify-between items-center mt-20 sm:mt-40 mb-20 sm:mb-40 px-4 md:px-20 py-10">
       <article className="flex flex-col justify-center items-center md:items-start gap-16 text-center md:text-left">
         <h1 className="text-4xl sm:text-6xl leading-normal text-blue font-bold">
           O meu objetivo <br /> é o seu bem-estar <br /> e qualidade de vida
