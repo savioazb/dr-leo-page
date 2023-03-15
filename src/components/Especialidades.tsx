@@ -39,7 +39,7 @@ export function Especialidades() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center py-12 justify-start md:justify-center gap-4 border-b  border-border ml-4">
+          <div className="flex flex-col md:flex-row items-center py-12 justify-start md:justify-center gap-4 border-b  border-border ml-0 md:ml-4">
             <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
               <Heartbeat size={32} className="text-blue" />
             </div>
@@ -70,7 +70,7 @@ export function Especialidades() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items-center py-12 justify-start md:justify-center gap-4 border-b md:border-none border-border ml-4">
+          <div className="flex flex-col md:flex-row items-center py-12 justify-start md:justify-center gap-4 border-b md:border-none border-border ml-0 md:ml-4">
             <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
               <FirstAidKit size={32} className="text-blue" />
             </div>
