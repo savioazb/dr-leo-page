@@ -1,34 +1,33 @@
 import Image from "next/image";
 import { MapPinLine } from "phosphor-react";
 import { FormEvent, useState } from "react";
-import logo from '../../public/logo-white.svg'
+import logo from "../../public/logo-blue.svg";
 
-interface Contact{
-  name: string,
-  email: string,
-  phone: string,
-  office: string
+interface Contact {
+  name: string;
+  email: string;
+  phone: string;
+  office: string;
 }
 
 export function Contato() {
-
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [office, setOffice] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [office, setOffice] = useState("");
 
   function handleContactSubmit(event: FormEvent) {
-    event.preventDefault()
-    const contact:Contact = {name, email, phone, office}
+    event.preventDefault();
+    const contact: Contact = { name, email, phone, office };
     console.log(contact);
-    fetch('api/mail', {
-      method: 'post',
-      body: JSON.stringify(contact)
-    })
-    setName('')
-    setEmail('')
-    setPhone('')
-    setOffice('')
+    fetch("api/mail", {
+      method: "post",
+      body: JSON.stringify(contact),
+    });
+    setName("");
+    setEmail("");
+    setPhone("");
+    setOffice("");
   }
 
   return (
@@ -36,20 +35,20 @@ export function Contato() {
       id="contato"
       className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-[1360px] m-auto px-4 lg:px-20 py-10"
     >
-      <article className="bg-blue py-16 flex flex-col justify-center items-center">
+      <article className="py-16 px-4 flex flex-col justify-center items-center">
         <div className="flex flex-col items-center gap-12">
           <div className="flex flex-col gap-4 justify-center items-center">
             <Image src={logo} alt="Doutor Leonardo Marcolino Logo" />
-            <h1 className="logo text-white text-lg">
+            <h1 className="logo text-blue text-lg">
               Dr. Leonardo Marcolino Ayres
             </h1>
           </div>
 
           <div className="flex items-baseline gap-2">
-            <MapPinLine className="text-white" />
+            <MapPinLine className="text-blue" />
             <div className="flex flex-col justify-start">
-              <h2 className="text-white font-bold text-lg">Consultório</h2>
-              <p className="text-white">
+              <h2 className="text-blue font-bold text-lg">Consultório</h2>
+              <p className="text-blue">
                 Rua da Conceição, 188 - sala 2207-A <br /> Torre do Niterói
                 Shopping <br />
                 Centro, Niterói-RJ <br /> (21) 2722-4317
@@ -58,10 +57,10 @@ export function Contato() {
           </div>
 
           <div className="flex items-baseline gap-2 self-baseline">
-            <MapPinLine className="text-white" />
+            <MapPinLine className="text-blue" />
             <div className="flex flex-col justify-start">
-              <h2 className="text-white font-bold text-lg">Clínica Osteo</h2>
-              <p className="text-white">
+              <h2 className="text-blue font-bold text-lg">Clínica Osteo</h2>
+              <p className="text-blue">
                 Rua Geraldo Martins, 116 <br /> Santa Rosa, Niterói-RJ <br />{" "}
                 (21) 2722-7404 | (21) 2272-7464
               </p>
@@ -134,13 +133,17 @@ export function Contato() {
             onChange={(event) => setOffice(event.target.value)}
             placeholder="Excolha o local do seu atendimento"
           >
-            <option value="" selected>Selecione o local de atendimento</option>
+            <option value="" selected>
+              Selecione o local de atendimento
+            </option>
             <option value="consultorio">Consultório - NIterói Shopping</option>
             <option value="clinica">Clínica Osteo</option>
-
           </select>
 
-          <button type="submit" className="w-full transition bg-green hover:bg-green-light text-blue rounded-xl px-8 py-4">
+          <button
+            type="submit"
+            className="w-full transition bg-green hover:bg-green-light text-blue rounded-xl px-8 py-4"
+          >
             Enviar
           </button>
         </form>

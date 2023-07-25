@@ -3,7 +3,6 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export function Navbar() {
-
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -11,7 +10,7 @@ export function Navbar() {
   };
 
   return (
-    <header className=" px-4 sm:px-20 py-10 text-blue fixed top-0 w-full bg-light">
+    <header className=" px-4 sm:px-20 py-6 text-blue fixed top-0 w-full bg-light">
       <nav className="justify-between hidden sm:flex max-w-[1360px] m-auto">
         <h1 className="logo text-lg">Dr. Leonardo Marcolino</h1>
         <ul className="flex justify-between gap-10">
@@ -33,9 +32,9 @@ export function Navbar() {
       {/* Mobile Button */}
       <div
         onClick={handleNav}
-        className={`flex ${nav ? 'justify-end' : 'justify-between'}  sm:hidden z-10 relative ${
-          nav ? "text-white" : "text-blue"
-        }`}
+        className={`flex ${
+          nav ? "justify-end" : "justify-between"
+        }  sm:hidden z-10 relative ${nav ? "text-white" : "text-blue"}`}
       >
         {!nav && <h1 className="logo text-lg">Dr. Leonardo Marcolino</h1>}
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
