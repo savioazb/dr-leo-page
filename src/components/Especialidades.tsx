@@ -121,12 +121,12 @@ export function Especialidades() {
             </div>
             <div className="flex flex-col gap-2 text-center md:text-left">
               <h3 className="text-lg font-medium text-blue">
-                Cirurgia Ortopédica 4
+                Ortopedia e traumatologia
               </h3>
               <p className="max-w-sm text-blue">
-                It was popularised in the 1960s with the release of Letraset
-                sheets containing Lorem Ipsum passages. It was popularised in
-                the 1960s.
+                Consultas e cirurgia em ortopedia geral e traumatologia:
+                tendinite do manguito rotador, síndrome do túnel do carpo,
+                fraturas do punho e tornozelo em adultos, entre outras.
               </p>
             </div>
           </motion.div>
