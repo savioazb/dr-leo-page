@@ -4,8 +4,9 @@ import { Especialidades } from "@/components/Especialidades";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
-import { Sobre } from "@/components/Sobre";
-import SobreTeste from "@/components/SobreTeste";
+import Sobre from "@/components/Sobre";
+
+import SobreTeste from "@/components/Sobre";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <SobreTeste />
+        <Sobre />
         <Especialidades />
         <Contato />
         <Convenios />

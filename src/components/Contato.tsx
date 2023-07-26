@@ -33,13 +33,13 @@ export function Contato() {
   return (
     <section
       id="contato"
-      className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20 max-w-[1360px] m-auto px-4 lg:px-20 py-10"
+      className="m-auto mb-20 grid max-w-[1360px] grid-cols-1 gap-8 px-4 py-10 md:grid-cols-2 lg:px-20"
     >
-      <article className="py-16 px-4 flex flex-col justify-center items-center">
+      <article className="flex flex-col items-center justify-center py-4 px-4 md:py-16">
         <div className="flex flex-col items-center gap-12">
-          <div className="flex flex-col gap-4 justify-center items-center">
+          <div className="flex flex-col items-center justify-center gap-4">
             <Image src={logo} alt="Doutor Leonardo Marcolino Logo" />
-            <h1 className="logo text-blue text-lg">
+            <h1 className="logo text-lg text-blue">
               Dr. Leonardo Marcolino Ayres
             </h1>
           </div>
@@ -47,7 +47,7 @@ export function Contato() {
           <div className="flex items-baseline gap-2">
             <MapPinLine className="text-blue" />
             <div className="flex flex-col justify-start">
-              <h2 className="text-blue font-bold text-lg">Consultório</h2>
+              <h2 className="text-lg font-bold text-blue">Consultório</h2>
               <p className="text-blue">
                 Rua da Conceição, 188 - sala 2207-A <br /> Torre do Niterói
                 Shopping <br />
@@ -59,7 +59,7 @@ export function Contato() {
           <div className="flex items-baseline gap-2 self-baseline">
             <MapPinLine className="text-blue" />
             <div className="flex flex-col justify-start">
-              <h2 className="text-blue font-bold text-lg">Clínica Osteo</h2>
+              <h2 className="text-lg font-bold text-blue">Clínica Osteo</h2>
               <p className="text-blue">
                 Rua Geraldo Martins, 116 <br /> Santa Rosa, Niterói-RJ <br />{" "}
                 (21) 2722-7404 | (21) 2272-7464
@@ -69,16 +69,18 @@ export function Contato() {
         </div>
       </article>
       <article>
-        <h3 className="text-5xl text-blue mb-8">Agende sua consulta</h3>
+        <h3 className="mb-8 text-center text-5xl text-blue md:text-right">
+          Agende sua consulta
+        </h3>
         <form onSubmit={handleContactSubmit}>
           <label
-            className="text-blue font-medium text-lg block mb-4"
+            className="mb-4 block text-lg font-medium text-blue"
             htmlFor="name"
           >
             Nome
           </label>
           <input
-            className="block mb-6 rounded-xl border border-border w-[100%] placeholder:text-gray h-14"
+            className="mb-6 block h-14 w-[100%] rounded-xl border border-border placeholder:text-gray"
             type="text"
             name="name"
             id="name"
@@ -88,13 +90,13 @@ export function Contato() {
           />
 
           <label
-            className="text-blue font-medium text-lg block mb-4"
+            className="mb-4 block text-lg font-medium text-blue"
             htmlFor="email"
           >
             E-mail
           </label>
           <input
-            className="block mb-6 rounded-xl border border-border w-[100%] placeholder:text-gray h-14"
+            className="mb-6 block h-14 w-[100%] rounded-xl border border-border placeholder:text-gray"
             type="text"
             id="email"
             name="email"
@@ -104,13 +106,13 @@ export function Contato() {
           />
 
           <label
-            className="text-blue font-medium text-lg block mb-4"
+            className="mb-4 block text-lg font-medium text-blue"
             htmlFor="phone"
           >
             Telefone
           </label>
           <input
-            className="block mb-6 rounded-xl border border-border w-[100%] placeholder:text-gray h-14"
+            className="mb-6 block h-14 w-[100%] rounded-xl border border-border placeholder:text-gray"
             type="text"
             name="phone"
             id="phone"
@@ -120,29 +122,27 @@ export function Contato() {
           />
 
           <label
-            className="text-blue font-medium text-lg block mb-4"
+            className="mb-4 block text-lg font-medium text-blue"
             htmlFor="office"
           >
             Selecione o local:
           </label>
           <select
-            className="block mb-6 rounded-xl border border-border w-[100%] placeholder:text-gray h-14"
+            className="mb-6 block h-14 w-[100%] rounded-xl border border-border placeholder:text-gray"
             name="office"
             id="office"
             value={office}
             onChange={(event) => setOffice(event.target.value)}
             placeholder="Excolha o local do seu atendimento"
           >
-            <option value="" selected>
-              Selecione o local de atendimento
-            </option>
+            <option value="">Selecione o local de atendimento</option>
             <option value="consultorio">Consultório - NIterói Shopping</option>
             <option value="clinica">Clínica Osteo</option>
           </select>
 
           <button
             type="submit"
-            className="w-full transition bg-green hover:bg-green-light text-blue rounded-xl px-8 py-4"
+            className="w-full rounded-xl bg-green px-8 py-4 text-blue transition hover:bg-green-light"
           >
             Enviar
           </button>

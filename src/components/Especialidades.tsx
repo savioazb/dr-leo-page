@@ -7,9 +7,9 @@ export function Especialidades() {
   return (
     <section
       id="especialidades"
-      className="mb-0 md:mb-8 max-w-[1360px] m-auto py-10 px-4 md:px-8 lg:px-20"
+      className="m-auto mb-0 max-w-[1360px] py-10 px-4 md:mb-8 md:px-8 lg:px-20"
     >
-      <article className="flex flex-col md:flex-row gap-12 justify-between mb-20 text-center md:text-left">
+      <article className="mb-4 flex flex-col justify-between gap-12 text-center md:mb-20 md:flex-row md:text-left">
         <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +36,7 @@ export function Especialidades() {
           </p>
           <Link
             href="#contato"
-            className="transition hover:underline text-blue flex items-center justify-center md:justify-start gap-1 cursor-pointer"
+            className="flex cursor-pointer items-center justify-center gap-1 text-blue transition hover:underline md:justify-start"
           >
             Entre em contato <BsArrowRightShort />
           </Link>
@@ -45,20 +45,20 @@ export function Especialidades() {
       <article>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <motion.div
-            className="flex flex-col lg:flex-row items-center py-12 justify-start gap-8 border-b md:border-r border-border pr-0 md:pr-4"
+            className="flex flex-col items-center justify-start gap-8 border-b border-border py-12 pr-0 md:border-r md:pr-4 lg:flex-row"
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 1, duration: 1 }}
             viewport={{ once: true }}
           >
-            <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green">
               <Wrench size={32} className="text-blue" />
             </div>
             <div className="flex flex-col gap-2 text-center md:text-left">
-              <h3 className="text-blue text-lg font-medium">
+              <h3 className="text-lg font-medium text-blue">
                 Artroplastia total de quadril
               </h3>
-              <p className="text-blue max-w-sm">
+              <p className="max-w-sm text-blue">
                 Realizado nos pacientes com quadro de artrose primária e
                 secundária (ocasionada por doenças como osteonecrose da cabeça
                 do fêmur, sequela de fraturas no quadril ou doenças da
@@ -67,20 +67,20 @@ export function Especialidades() {
             </div>
           </motion.div>
           <motion.div
-            className="flex flex-col lg:flex-row items-center py-12 justify-start md:justify-center gap-8 border-b  border-border pl-0 md:pl-4"
+            className="flex flex-col items-center justify-start gap-8 border-b border-border py-12 pl-0  md:justify-center md:pl-4 lg:flex-row"
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.5, duration: 1 }}
+            transition={{ delay: 1.1, duration: 1 }}
             viewport={{ once: true }}
           >
-            <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green">
               <Heartbeat size={32} className="text-blue" />
             </div>
             <div className="flex flex-col gap-2 text-center md:text-left">
-              <h3 className="text-blue text-lg font-medium">
+              <h3 className="text-lg font-medium text-blue">
                 Fraturas da região do quadril
               </h3>
-              <p className="text-blue max-w-sm">
+              <p className="max-w-sm text-blue">
                 Fraturas do colo do fêmur, acetábulo ou transtrocanteriana são
                 exemplos de fraturas que podem acometer os pacientes jovens
                 (traumas de alta energia) ou idosos (traumas de baixa energia,
@@ -89,20 +89,20 @@ export function Especialidades() {
             </div>
           </motion.div>
           <motion.div
-            className="flex flex-col lg:flex-row items-center py-12 justify-start gap-8 border-b md:border-b-0 md:border-r border-border pr-0 md:pr-4"
+            className="flex flex-col items-center justify-start gap-8 border-b border-border py-12 pr-0 md:border-b-0 md:border-r md:pr-4 lg:flex-row"
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 2, duration: 1 }}
+            transition={{ delay: 1.2, duration: 1 }}
             viewport={{ once: true }}
           >
-            <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green">
               <Activity size={32} className="text-blue" />
             </div>
             <div className="flex flex-col gap-2 text-center md:text-left">
-              <h3 className="text-blue text-lg font-medium">
+              <h3 className="text-lg font-medium text-blue">
                 Cirurgia preservadora do quadril
               </h3>
-              <p className="text-blue max-w-sm">
+              <p className="max-w-sm text-blue">
                 Tratamento cirúrgico de doenças como osteonecrose da cabeça do
                 fêmur, impacto femoro-acetabular, Tendinopatias ao nível do
                 quadril, entre outras.
@@ -110,20 +110,20 @@ export function Especialidades() {
             </div>
           </motion.div>
           <motion.div
-            className="flex flex-col lg:flex-row items-center py-12 justify-start md:justify-center gap-8 border-b md:border-none border-border pl-0 md:pl-4"
+            className="flex flex-col items-center justify-start gap-8 border-b border-border py-12 pl-0 md:justify-center md:border-none md:pl-4 lg:flex-row"
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: 2.5, duration: 1 }}
+            transition={{ delay: 1.3, duration: 1 }}
             viewport={{ once: true }}
           >
-            <div className="rounded-full bg-green w-16 h-16 flex justify-center items-center">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green">
               <FirstAidKit size={32} className="text-blue" />
             </div>
             <div className="flex flex-col gap-2 text-center md:text-left">
-              <h3 className="text-blue text-lg font-medium">
+              <h3 className="text-lg font-medium text-blue">
                 Cirurgia Ortopédica 4
               </h3>
-              <p className="text-blue max-w-sm">
+              <p className="max-w-sm text-blue">
                 It was popularised in the 1960s with the release of Letraset
                 sheets containing Lorem Ipsum passages. It was popularised in
                 the 1960s.
