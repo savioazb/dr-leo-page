@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="m-auto mt-20 mb-12 flex max-w-[1360px] flex-col-reverse items-center justify-center px-4 py-16 sm:mt-40 sm:mb-40 md:justify-between md:px-20 lg:flex-row"
+      className="m-auto mt-20 mb-12 flex max-w-[1360px] flex-col-reverse items-center justify-center px-4 py-20 sm:mt-40 sm:mb-40 md:justify-between md:px-20 lg:flex-row"
     >
       <article className="flex flex-col items-center justify-center gap-8 text-center md:items-start md:gap-16 md:text-left">
         <motion.div
