@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
-import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Sobre() {
   return (
     <section
       id="sobre"
-      className="mx-auto mb-20 flex max-w-[1360px] cursor-pointer flex-col items-center justify-between gap-8 bg-[url('../../public/heart.svg')] bg-[length:800px] bg-center bg-no-repeat px-4 py-8 md:px-20 md:py-16 lg:flex-row"
+      className="mx-auto mb-20 flex max-w-[1360px] flex-col items-center justify-between gap-8 bg-[url('../../public/heart.svg')] bg-[length:800px] bg-center bg-no-repeat px-4 py-8 md:px-20 md:py-16 lg:flex-row"
     >
       <motion.div
-        className="group flex h-[400px] w-[300px] items-end justify-between rounded-xl bg-[url('../../public/portrait.png')] bg-cover bg-center p-12 shadow-[inset_0_-19px_26px_29px_rgba(0,0,0,0.1)] sm:h-[572px] sm:w-[450px]"
+        className="group flex h-[400px] w-[300px] items-end justify-between rounded-xl bg-[url('../../public/leonardo-perfil.jpeg')] bg-cover bg-center p-12 shadow-[inset_0_-19px_26px_29px_rgba(0,0,0,0.1)] sm:h-[572px] sm:w-[450px]"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -17,13 +16,10 @@ export default function Sobre() {
         }}
         viewport={{ once: true }}
       >
-        <p className="text-3xl font-bold text-white transition ease-in-out group-hover:text-blue">
+        <p className="text-3xl font-bold text-white">
           Dr. Leonardo <br />
           Marcolino
         </p>
-        <div className="bg-transparent rounded-full border border-white p-2 text-2xl text-white transition ease-in-out group-hover:bg-white group-hover:text-blue">
-          <FaLinkedinIn />
-        </div>
       </motion.div>
 
       <motion.div

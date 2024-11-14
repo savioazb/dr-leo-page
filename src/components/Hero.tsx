@@ -42,7 +42,7 @@ export function Hero() {
           }}
         >
           <button className="rounded-xl bg-green px-8 py-4 text-blue transition hover:bg-green-light">
-            <Link href="#contato">Entre em contato</Link>
+            <Link href="#contato">Marque uma consulta</Link>
           </button>
           <Link
             href="#especialidades"

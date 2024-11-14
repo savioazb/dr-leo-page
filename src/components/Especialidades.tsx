@@ -7,7 +7,7 @@ export function Especialidades() {
   return (
     <section
       id="especialidades"
-      className="m-auto mb-0 max-w-[1360px] py-10 px-4 md:mb-8 md:px-8 lg:px-20"
+      className="m-auto mb-0 max-w-[1360px] py-10 px-4 md:px-8 lg:px-20"
     >
       <article className="mb-4 flex flex-col justify-between gap-12 text-center md:mb-20 md:flex-row md:text-left">
         <motion.div
@@ -38,7 +38,7 @@ export function Especialidades() {
             href="#contato"
             className="flex cursor-pointer items-center justify-center gap-1 text-blue transition hover:underline md:justify-start"
           >
-            Entre em contato <BsArrowRightShort />
+            Marque uma consulta <BsArrowRightShort />
           </Link>
         </motion.div>
       </article>

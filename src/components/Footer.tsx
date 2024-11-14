@@ -1,7 +1,10 @@
 export function Footer() {
   return (
-    <footer className="max-w-[100%] flex justify-center px-20 py-10 text-white bg-blue">
-      <p>Copyright 2023 - Dr. Leonardo Marcolino Ayres - Ortopedia e Traumatologia. Todos os Direitos Reservados</p>
+    <footer className="flex max-w-[100%] justify-center bg-blue px-20 py-10 text-white">
+      <p>
+        Copyright 2025 - Dr. Leonardo Marcolino Ayres - Ortopedia e
+        Traumatologia. Todos os Direitos Reservados
+      </p>
     </footer>
-  )
+  );
 }
