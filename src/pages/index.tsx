@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div>
         <Head>
-          <title>Dr. Leonardo Marcolino</title>
+          <title>Dr. Leonardo Marcolino Ayres</title>
         </Head>
       </div>
       <Navbar />

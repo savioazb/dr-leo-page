@@ -18,7 +18,7 @@ export default function Sobre() {
       >
         <p className="text-3xl font-bold text-white">
           Dr. Leonardo <br />
-          Marcolino
+          Marcolino Ayres
         </p>
       </motion.div>
 

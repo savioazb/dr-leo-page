@@ -14,7 +14,7 @@ export function Navbar() {
       <nav className="m-auto hidden max-w-[1360px] justify-between sm:flex">
         <Link href="#home">
           <h1 className="logo text-sm font-bold uppercase hover:underline">
-            Dr. Leonardo Marcolino
+            Dr. Leonardo Marcolino Ayres
           </h1>
         </Link>
         <ul className="flex justify-between gap-10">

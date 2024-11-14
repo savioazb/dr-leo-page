@@ -32,7 +32,7 @@ export function Especialidades() {
           <p className="text-lg text-gray">
             Lesões e dores crônicas podem afetar a sua vida de diversas
             maneiras. Não espere mais para buscar ajuda e agende uma consulta
-            com o Dr. Leonardo Marcolino.
+            com o Dr. Leonardo Marcolino Ayres.
           </p>
           <Link
             href="#contato"
