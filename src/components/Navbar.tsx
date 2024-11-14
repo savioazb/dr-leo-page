@@ -56,7 +56,7 @@ export function Navbar() {
           nav ? "justify-end" : "justify-between"
         }  relative z-10 sm:hidden ${nav ? "text-white" : "text-blue"}`}
       >
-        {!nav && <h1 className="logo text-lg">Dr. Leonardo Marcolino</h1>}
+        {!nav && <h1 className="logo text-lg">Dr. Leonardo Marcolino Ayres</h1>}
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
