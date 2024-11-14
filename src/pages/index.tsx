@@ -5,12 +5,16 @@ import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import Sobre from "@/components/Sobre";
-
-import SobreTeste from "@/components/Sobre";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <div>
+        <Head>
+          <title>Dr. Leonardo Marcolino</title>
+        </Head>
+      </div>
       <Navbar />
       <main>
         <Hero />
