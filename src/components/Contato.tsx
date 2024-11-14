@@ -50,7 +50,12 @@ export function Contato() {
                   </a>
                 </p>
                 <button className="mt-4 rounded-xl bg-green px-4 py-2 text-blue transition hover:bg-green-light">
-                  <Link href="#contato">Marcar consulta</Link>
+                  <Link
+                    href="https://leonardomarcolino.marcamed.com.br/"
+                    target="_blank"
+                  >
+                    Marcar consulta
+                  </Link>
                 </button>
                 <h3 className="mt-4 text-center text-sm text-blue">
                   *ACEITAMOS CONVÊNIO E PARTICULAR
