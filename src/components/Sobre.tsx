@@ -33,7 +33,7 @@ export default function Sobre() {
         viewport={{ once: true }}
       >
         <p className="max-w-lg text-lg text-blue">
-          Sobrinho e filho de médico, o Dr. Leonardo Marcolino Ayres já sabia
+          Filho e sobrinho de médico, o Dr. Leonardo Marcolino Ayres já sabia
           que desde cedo iria seguir pelo mesmo caminho. Entrou para a faculdade
           Souza Marques aos 18 anos de idade, com a certeza de que seguiria pelo
           caminho da cirurgia, quando no final do curso decidiu optar pela
