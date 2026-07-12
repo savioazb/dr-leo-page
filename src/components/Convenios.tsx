@@ -30,28 +30,6 @@ export function Convenios() {
         <div className="flex items-baseline gap-2 self-baseline">
           <MapPinLine className="text-blue" />
           <div className="flex flex-col justify-start">
-            <h2 className="mb-2 text-lg font-bold text-blue">Clínica Osteo</h2>
-            <p className="mb-2 text-blue">
-              Horário:{" "}
-              <b>
-                Terça feira 14h-18h / <br /> Quinta feira 14h-18h
-              </b>
-            </p>
-            <p className="text-blue">
-              Rua Geraldo Martins, 116 <br /> Santa Rosa, Niterói-RJ <br />{" "}
-              <a className="underline" href="tel:+552127227404">
-                (21) 2722-7404
-              </a>{" "}
-              |{" "}
-              <a className="underline" href="tel:+552122727464">
-                (21) 2272-7464
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className="flex items-baseline gap-2 self-baseline">
-          <MapPinLine className="text-blue" />
-          <div className="flex flex-col justify-start">
             <h2 className="mb-2 text-lg font-bold text-blue">CHN Unidade II</h2>
             <p className="mb-2 text-blue">
               Horário:{" "}

@@ -39,7 +39,9 @@ export function Contato() {
                   Consultório
                 </h2>
                 <p className="mb-2 text-blue">
-                  Horário: <b>Terça feira 8h-12h</b>
+                  Horário: <br /> <b>Terça feira 8h-17h</b>
+                  <br />
+                  <b>Quinta feira 14h-18h</b>
                 </p>
                 <p className="mb-2 text-blue">
                   Rua da Conceição, 188 - sala 2207-A <br /> Torre do Niterói
