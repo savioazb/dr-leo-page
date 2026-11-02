@@ -39,7 +39,9 @@ export function Contato() {
                   Consultório
                 </h2>
                 <p className="mb-2 text-blue">
-                  Horário: <br /> <b>Terça feira 8h-17h</b>
+                  Horário: <br /> <b>Segunda feira 9h-12h</b>
+                  <br />
+                  <b>Terça feira 9h-12h / 14h-18h</b>
                   <br />
                   <b>Quinta feira 14h-18h</b>
                 </p>
@@ -62,6 +64,10 @@ export function Contato() {
                 <h3 className="mt-4 text-center text-sm text-blue">
                   *ACEITAMOS CONVÊNIO E PARTICULAR
                 </h3>
+                <p className="mt-2 max-w-[280px] text-center text-sm text-blue">
+                  Convênios aceitos no consultório: <b>Porto Seguro</b>,{" "}
+                  <b>SulAmérica</b> e <b>Assim</b>.
+                </p>
               </div>
             </div>
           </div>

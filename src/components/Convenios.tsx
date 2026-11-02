@@ -16,7 +16,7 @@ export function Convenios() {
             <p className="mb-2 text-blue">
               Horário:{" "}
               <b>
-                Segunda feira 14h-18h / <br /> Quarta feira 8h-12h
+                Segunda feira 14h-18h / <br /> Quinta feira 10h-13h
               </b>
             </p>
             <p className="text-blue">
