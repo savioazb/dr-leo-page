@@ -70,7 +70,7 @@ export function Fechamento() {
               className="h-auto w-11 shrink-0 lg:w-14"
             />
             <p className="text-[14px] leading-[1.4] lg:text-base">
-              {site.nomeCompleto}
+              {site.nome}
               <br />
               {site.especialidadeProfissional}
               <br className="lg:hidden" />

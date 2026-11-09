@@ -35,8 +35,8 @@ export function OndeAtendo() {
             </p>
             {local.convenios && (
               <p className="mt-3 lg:mt-4">
-                <b className="font-semibold">Convênios:</b> {listaPorExtenso(local.convenios)}.
-                {local.aceitaParticular && " Também particular."}
+                <b className="font-semibold">{local.aceitaParticular ? "Particular e convênios:" : "Convênios:"}</b>{" "}
+                {listaPorExtenso(local.convenios)}.
               </p>
             )}
           </article>

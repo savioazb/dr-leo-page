@@ -14,21 +14,18 @@ export type Local = {
 
 export const site = {
   url: "https://drleonardomarcolino.com.br",
-  nome: "Dr. Leonardo Marcolino",
-  nomeCompleto: "Dr. Leonardo Marcolino Ayres",
-  primeiroNome: "Leonardo",
-  sobrenome: "Marcolino",
+  nome: "Dr. Leonardo Marcolino Ayres",
   especialidade: "Ortopedia e traumatologia",
   especialidadeProfissional: "Médico ortopedista e traumatologista",
   // a confirmar com o Leonardo: "Atuação em cirurgia do quadril"
   atuacao: "Atuação em cirurgia do quadril",
   cidade: "Niterói",
 
-  // Ainda não existem. Enquanto forem null, aparece "⋯" e o botão de WhatsApp fica escondido.
-  crm: null as string | null,
-  rqe: null as string | null,
+  // Se algum voltar a ser null, aparece "⋯" no lugar do número e o botão de WhatsApp fica escondido.
+  crm: "52 955612" as string | null,
+  rqe: "26190" as string | null,
   /** Só dígitos, com DDI e DDD. Ex.: "5521999999999" */
-  whatsapp: null as string | null,
+  whatsapp: "5521964876011" as string | null,
 
   marcamed: "https://leonardomarcolino.marcamed.com.br/",
   instagram: {
@@ -84,7 +81,7 @@ export function registro(): string {
 /** Link do WhatsApp, ou null se ainda não houver número (o botão deve ser escondido) */
 export function linkWhatsapp(): string | null {
   if (!site.whatsapp) return null;
-  const texto = encodeURIComponent("Olá! Gostaria de agendar uma consulta com o Dr. Leonardo Marcolino.");
+  const texto = encodeURIComponent("Olá! Gostaria de agendar uma consulta com o Dr. Leonardo Marcolino Ayres.");
   return `https://wa.me/${site.whatsapp}?text=${texto}`;
 }
 

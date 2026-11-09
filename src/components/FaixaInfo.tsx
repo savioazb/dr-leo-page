@@ -2,7 +2,7 @@ import { conveniosConsultorio, listaPorExtenso, site } from "@/data/site";
 
 const itens = [
   { rotulo: "Onde atendo", valor: "Niterói Shopping, Niterói D'Or e CHN" },
-  { rotulo: "Convênios no consultório", valor: listaPorExtenso(conveniosConsultorio) },
+  { rotulo: "Consultório", valor: listaPorExtenso(["Particular", ...conveniosConsultorio]) },
   { rotulo: "Sociedades", valor: site.sociedades },
 ];
 

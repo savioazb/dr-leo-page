@@ -22,11 +22,11 @@ export function Marca({ cor, largura, alt = "", className }: Props) {
   );
 }
 
-/** "Dr. Leonardo" em redondo e "Marcolino" em itálico */
+/** "Dr. Leonardo" em redondo e "Marcolino Ayres" em itálico */
 export function Assinatura() {
   return (
     <>
-      Dr. Leonardo <em>Marcolino</em>
+      Dr. Leonardo <em>Marcolino Ayres</em>
     </>
   );
 }

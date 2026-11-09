@@ -28,7 +28,7 @@ export function Seo({ titulo, descricao, caminho, indexar = true }: Props) {
       <meta property="og:image" content={imagem} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Dr. Leonardo Marcolino, ortopedia e traumatologia, em Niterói" />
+      <meta property="og:image:alt" content="Dr. Leonardo Marcolino Ayres, ortopedia e traumatologia, em Niterói" />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );

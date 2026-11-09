@@ -15,7 +15,7 @@ export function Topo() {
         </p>
         <h1 className="ml-[-2px] mt-3 font-serif text-[68px] leading-[.94] tracking-[-.02em] lg:ml-[-4px] lg:mt-6 lg:text-[clamp(84px,8.34vw,120px)]">
           Dr. Leonardo <br />
-          <em>Marcolino</em>
+          <em>Marcolino Ayres</em>
         </h1>
         <p className="mt-4 font-serif text-[29px] leading-[1.1] lg:mt-7 lg:text-[clamp(32px,2.92vw,42px)] lg:tracking-[-.005em]">
           {site.especialidade}.<br />
@@ -45,7 +45,7 @@ export function Topo() {
         />
         <Image
           src="/imagens/retrato-consultorio.jpg"
-          alt="Dr. Leonardo Marcolino sorrindo durante uma conversa no consultório"
+          alt="Dr. Leonardo Marcolino Ayres sorrindo durante uma conversa no consultório"
           width={1300}
           height={1720}
           priority

@@ -3,12 +3,12 @@ import { site } from "@/data/site";
 
 // Desktop: três linhas. Celular: residência e treinamento juntos, como no design.
 const formacaoDesktop = [
-  { rotulo: "Formação", valor: "Souza Marques" },
+  { rotulo: "Formação", valor: "Faculdade Souza Marques" },
   { rotulo: "Residência em ortopedia", valor: "Hospital Federal de Ipanema" },
   { rotulo: "Treinamento em quadril", valor: "Hospital Federal de Ipanema" },
 ];
 const formacaoCelular = [
-  { rotulo: "Formação", valor: "Souza Marques" },
+  { rotulo: "Formação", valor: "Faculdade Souza Marques" },
   { rotulo: "Residência e treinamento em quadril", valor: "Hospital Federal de Ipanema" },
 ];
 
@@ -25,7 +25,7 @@ export function Sobre() {
         />
         <Image
           src="/imagens/retrato-jaleco.jpg"
-          alt="Dr. Leonardo Marcolino de jaleco, no consultório"
+          alt="Dr. Leonardo Marcolino Ayres de jaleco, no consultório"
           width={1254}
           height={1254}
           sizes="(min-width: 1024px) 500px, (min-width: 768px) 400px, 320px"
@@ -64,7 +64,6 @@ export function Sobre() {
           href={site.instagram.url}
           className="mt-1.5 inline-block text-[17px] font-medium underline underline-offset-2 lg:mt-[18px] lg:text-[18px]"
         >
-          <span className="hidden lg:inline">Explicações no Instagram: </span>
           {site.instagram.usuario}
         </a>
       </div>

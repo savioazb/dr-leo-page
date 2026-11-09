@@ -26,18 +26,18 @@ function contar(destino: Destino) {
 
 export default function Agendar() {
   const whatsapp = linkWhatsapp();
-  const btn = "btn h-16 w-full px-6 text-[19px] md:w-auto md:px-9";
+  const btn = "btn h-[60px] w-full md:h-16 px-6 text-[19px] md:w-auto md:px-9";
 
   return (
     <>
       <Seo
-        titulo="Agende sua consulta | Dr. Leonardo Marcolino"
-        descricao="Agende sua consulta com o Dr. Leonardo Marcolino, médico ortopedista e traumatologista em Niterói. Online, por WhatsApp ou telefone."
+        titulo="Agende sua consulta | Dr. Leonardo Marcolino Ayres"
+        descricao="Agende sua consulta com o Dr. Leonardo Marcolino Ayres, médico ortopedista e traumatologista em Niterói. Online, por WhatsApp ou telefone."
         caminho="/agendar"
         indexar={false}
       />
       <main className="min-h-screen overflow-hidden bg-petroleo-profundo text-papel">
-        <div className="relative mx-auto flex min-h-screen max-w-site flex-col px-6 pb-7 pt-10 md:px-12 md:pt-[72px] lg:pb-10 xl:px-24">
+        <div className="relative mx-auto flex min-h-screen max-w-site flex-col px-6 pb-7 pt-10 md:px-12 md:pt-12 lg:pb-10 lg:pt-[72px] xl:px-24">
           <FioPonto
             className="md:hidden"
             quadro={[390, 844]}
@@ -63,8 +63,8 @@ export default function Agendar() {
               className="h-auto w-16 shrink-0 lg:w-28"
             />
             <div>
-              <p className="font-serif text-[42px] leading-none tracking-[-.01em] md:text-[56px] lg:mt-[-6px] lg:text-[clamp(64px,6.4vw,92px)]">
-                Dr. Leonardo <em>Marcolino</em>
+              <p className="font-serif text-[clamp(28px,8.5vw,42px)] leading-none tracking-[-.01em] md:text-[48px] lg:mt-[-6px] lg:text-[clamp(64px,6.4vw,92px)]">
+                Dr. Leonardo <em>Marcolino Ayres</em>
               </p>
               {/* a confirmar com o Leonardo: "Atuação em cirurgia do quadril" */}
               <p className="mt-3 text-[17px] leading-[1.4] lg:mt-4 lg:text-[21px] lg:leading-[1.5]">
@@ -75,11 +75,11 @@ export default function Agendar() {
             </div>
           </div>
 
-          <h1 className="relative ml-[-2px] mt-[66px] max-w-[300px] font-serif text-[68px] leading-[.98] tracking-[-.015em] md:mt-[clamp(80px,12vw,173px)] md:max-w-none md:text-[96px] lg:ml-[-4px] lg:text-[clamp(110px,10.4vw,150px)] lg:leading-none">
+          <h1 className="relative ml-[-2px] mt-[80px] max-w-[300px] font-serif text-[68px] leading-[.98] tracking-[-.015em] md:mt-[clamp(80px,12vw,173px)] md:max-w-none md:text-[96px] lg:ml-[-4px] lg:text-[clamp(110px,10.4vw,150px)] lg:leading-none">
             Agende sua <em>consulta</em>
           </h1>
 
-          <div className="relative mt-[34px] flex flex-col gap-2.5 md:mt-12 md:flex-row md:flex-wrap md:gap-3">
+          <div className="relative mt-5 flex flex-col gap-2.5 md:mt-12 md:flex-row md:flex-wrap md:gap-3">
             <a
               href={site.marcamed}
               onClick={() => contar("marcamed")}
@@ -107,7 +107,7 @@ export default function Agendar() {
             No agendamento online, você cria um cadastro no Marcamed e escolhe o horário.
           </p>
 
-          <div className="relative mt-auto flex flex-col gap-10 pt-12 lg:flex-row lg:items-baseline lg:justify-between">
+          <div className="relative mt-auto flex flex-col gap-8 pt-4 md:pt-12 lg:flex-row lg:items-baseline lg:justify-between">
             <p className="text-base leading-[1.42] lg:text-[19px]">
               Niterói Shopping · Niterói D&apos;Or · CHN
               <span className="hidden lg:inline"> · </span>

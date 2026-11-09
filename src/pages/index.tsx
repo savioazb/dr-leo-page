@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       <Seo
-        titulo="Dr. Leonardo Marcolino | Ortopedia e cirurgia do quadril em Niterói"
+        titulo="Dr. Leonardo Marcolino Ayres | Ortopedia e cirurgia do quadril em Niterói"
         // a confirmar com o Leonardo: "Atuação em cirurgia do quadril"
-        descricao="Dr. Leonardo Marcolino, médico ortopedista e traumatologista com atuação em cirurgia do quadril. Atendimento em Niterói, por convênio e particular. Agende sua consulta."
+        descricao="Dr. Leonardo Marcolino Ayres, médico ortopedista e traumatologista com atuação em cirurgia do quadril. Atendimento em Niterói, por convênio e particular. Agende sua consulta."
         caminho="/"
       />
       {/* Espaço para a barra fixa do celular não cobrir o fim da página */}
