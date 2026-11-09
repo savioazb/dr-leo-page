@@ -38,7 +38,6 @@ export function Sobre() {
           Sobre o <br className="lg:hidden" />
           <em>Dr. Leonardo</em>
         </h2>
-        {/* a confirmar com o Leonardo: o texto de "Sobre" */}
         <p className="mt-4 text-[18px] leading-[1.46] lg:mt-7 lg:text-[21px] lg:leading-[1.5]">
           Sou filho e sobrinho de médico. Atuo em ortopedia e traumatologia, com ênfase nas doenças do quadril.
         </p>

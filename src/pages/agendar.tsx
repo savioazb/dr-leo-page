@@ -66,7 +66,6 @@ export default function Agendar() {
               <p className="font-serif text-[clamp(28px,8.5vw,42px)] leading-none tracking-[-.01em] md:text-[48px] lg:mt-[-6px] lg:text-[clamp(64px,6.4vw,92px)]">
                 Dr. Leonardo <em>Marcolino Ayres</em>
               </p>
-              {/* a confirmar com o Leonardo: "Atuação em cirurgia do quadril" */}
               <p className="mt-3 text-[17px] leading-[1.4] lg:mt-4 lg:text-[21px] lg:leading-[1.5]">
                 {site.especialidadeProfissional}
                 <br />

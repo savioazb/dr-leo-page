@@ -17,7 +17,6 @@ export const site = {
   nome: "Dr. Leonardo Marcolino Ayres",
   especialidade: "Ortopedia e traumatologia",
   especialidadeProfissional: "Médico ortopedista e traumatologista",
-  // a confirmar com o Leonardo: "Atuação em cirurgia do quadril"
   atuacao: "Atuação em cirurgia do quadril",
   cidade: "Niterói",
 

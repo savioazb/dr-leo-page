@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-// a confirmar com o Leonardo: os quatro itens de "O que eu trato"
 const itens = [
   {
     titulo: "Artroplastia total de quadril",
@@ -26,7 +25,6 @@ const ALT = "Corte do fêmur em gravura, mostrando a estrutura interna do osso";
 /**
  * Fêmur com o círculo vermelho por baixo do traço e a geometria de construção por cima.
  * Coordenadas no sistema da própria imagem, como no design.
- * a confirmar com o Leonardo: os eixos desenhados sobre o fêmur
  */
 function FemurDesktop() {
   return (
