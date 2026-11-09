@@ -21,7 +21,7 @@ export const site = {
   cidade: "Niterói",
 
   // Se algum voltar a ser null, aparece "⋯" no lugar do número e o botão de WhatsApp fica escondido.
-  crm: "52 955612" as string | null,
+  crm: "955612" as string | null,
   rqe: "26190" as string | null,
   /** Só dígitos, com DDI e DDD. Ex.: "5521999999999" */
   whatsapp: "5521964876011" as string | null,
