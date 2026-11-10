@@ -1,24 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}",],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      'white': '#F0FDFB',
-      'light': '#EDF5F4',
-      'border': '#EDE3E3',
-      'blue': '#035678',
-      'green': '#87E4B2',
-      'green-light': '#a3f7ca',
-      'gray':'#7CA1A6',
-      'black':'#1f1717'
+      transparent: "transparent",
+      current: "currentColor",
+      papel: "#f2eee5",
+      "papel-fundo": "#e6e0d2",
+      tinta: "#1c1b18",
+      "tinta-suave": "#57534b",
+      linha: "#cfc7b6",
+      "petroleo-profundo": "#022f42",
+      "texto-invertido-suave": "#a8bcc3",
+      "acento-ponto": "#d9482a",
+    },
+    borderRadius: {
+      none: "0",
+      full: "9999px",
+    },
+    boxShadow: {
+      none: "none",
     },
     extend: {
-      boxShadow: {
-        '3xl': '0px 4px 13px rgba(34, 34, 34, 0.29)',
-      }
-    }
+      fontFamily: {
+        serif: ["var(--font-serif)", "Georgia", "Times New Roman", "serif"],
+        sans: ["var(--font-sans)", "Helvetica Neue", "Arial", "sans-serif"],
+      },
+      maxWidth: {
+        site: "1440px",
+      },
+    },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-}
+  plugins: [],
+};

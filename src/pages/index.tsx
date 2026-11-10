@@ -1,29 +1,34 @@
-import { Contato } from "@/components/Contato";
-import { Convenios } from "@/components/Convenios";
-import { Especialidades } from "@/components/Especialidades";
-import { Footer } from "@/components/Footer";
-import { Hero } from "@/components/Hero";
-import { Navbar } from "@/components/Navbar";
-import Sobre from "@/components/Sobre";
-import Head from "next/head";
+import { BarraAgendar } from "@/components/BarraAgendar";
+import { Cabecalho } from "@/components/Cabecalho";
+import { FaixaInfo } from "@/components/FaixaInfo";
+import { Fechamento } from "@/components/Fechamento";
+import { OndeAtendo } from "@/components/OndeAtendo";
+import { OQueEuTrato } from "@/components/OQueEuTrato";
+import { Seo } from "@/components/Seo";
+import { Sobre } from "@/components/Sobre";
+import { Topo } from "@/components/Topo";
 
 export default function Home() {
   return (
     <>
-      <div>
-        <Head>
-          <title>Dr. Leonardo Marcolino Ayres</title>
-        </Head>
+      <Seo
+        titulo="Dr. Leonardo Marcolino Ayres | Ortopedia e cirurgia do quadril em Niterói"
+        descricao="Dr. Leonardo Marcolino Ayres, médico ortopedista e traumatologista com atuação em cirurgia do quadril. Atendimento em Niterói, por convênio e particular. Agende sua consulta."
+        caminho="/"
+      />
+      {/* Espaço para a barra fixa do celular não cobrir o fim da página */}
+      <div className="pb-[calc(72px+env(safe-area-inset-bottom))] lg:pb-0">
+        <Cabecalho />
+        <main>
+          <Topo />
+          <FaixaInfo />
+          <OQueEuTrato />
+          <Sobre />
+          <OndeAtendo />
+        </main>
+        <Fechamento />
       </div>
-      <Navbar />
-      <main>
-        <Hero />
-        <Sobre />
-        <Especialidades />
-        <Contato />
-        <Convenios />
-      </main>
-      <Footer />
+      <BarraAgendar />
     </>
   );
 }

@@ -1,62 +1,71 @@
-import { motion } from "framer-motion";
+import Image from "next/image";
+import { site } from "@/data/site";
 
-export default function Sobre() {
+// Desktop: três linhas. Celular: residência e treinamento juntos, como no design.
+const formacaoDesktop = [
+  { rotulo: "Formação", valor: "Faculdade Souza Marques" },
+  { rotulo: "Residência em ortopedia", valor: "Hospital Federal de Ipanema" },
+  { rotulo: "Treinamento em quadril", valor: "Hospital Federal de Ipanema" },
+];
+const formacaoCelular = [
+  { rotulo: "Formação", valor: "Faculdade Souza Marques" },
+  { rotulo: "Residência e treinamento em quadril", valor: "Hospital Federal de Ipanema" },
+];
+
+export function Sobre() {
   return (
     <section
       id="sobre"
-      className="mx-auto mb-20 flex max-w-[1360px] flex-col items-center justify-between gap-8 bg-[url('../../public/heart.svg')] bg-[length:800px] bg-center bg-no-repeat px-4 py-8 md:px-20 md:py-16 lg:flex-row"
+      className="mx-auto grid max-w-site scroll-mt-4 items-center gap-7 px-6 py-14 md:px-12 lg:grid-cols-[43fr_57fr] lg:gap-16 lg:py-[120px] xl:gap-24 xl:px-24"
     >
-      <motion.div
-        className="group flex h-[400px] w-[300px] items-end justify-between rounded-xl bg-[url('../../public/leonardo-perfil.jpeg')] bg-cover bg-center p-12 shadow-[inset_0_-19px_26px_29px_rgba(0,0,0,0.1)] sm:h-[572px] sm:w-[450px]"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 1,
-          duration: 1.5,
-        }}
-        viewport={{ once: true }}
-      >
-        <p className="text-3xl font-bold text-white">
-          Dr. Leonardo <br />
-          Marcolino Ayres
-        </p>
-      </motion.div>
+      <div className="relative w-[320px] max-w-full md:w-[400px] lg:w-full lg:max-w-[500px]">
+        <div
+          aria-hidden="true"
+          className="absolute left-[78.6%] top-[78.6%] aspect-square w-[20.4%] rounded-full bg-acento-ponto"
+        />
+        <Image
+          src="/imagens/retrato-jaleco.jpg"
+          alt="Dr. Leonardo Marcolino Ayres de jaleco, no consultório"
+          width={1254}
+          height={1254}
+          sizes="(min-width: 1024px) 500px, (min-width: 768px) 400px, 320px"
+          className="relative aspect-square w-full rounded-full object-cover"
+        />
+      </div>
 
-      <motion.div
-        className="flex flex-col gap-8"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{
-          delay: 1.5,
-          duration: 1,
-        }}
-        viewport={{ once: true }}
-      >
-        <p className="max-w-lg text-lg text-blue">
-          Filho e sobrinho de médico, o Dr. Leonardo Marcolino Ayres já sabia
-          que desde cedo iria seguir pelo mesmo caminho. Entrou para a faculdade
-          Souza Marques aos 18 anos de idade, com a certeza de que seguiria pelo
-          caminho da cirurgia, quando no final do curso decidiu optar pela
-          ortopedia e traumatologia.
+      <div>
+        <h2 className="ml-[-2px] font-serif text-[56px] leading-none tracking-[-.015em] lg:text-[clamp(60px,5.28vw,76px)] lg:leading-[1.02]">
+          Sobre o <br className="lg:hidden" />
+          <em>Dr. Leonardo</em>
+        </h2>
+        <p className="mt-4 text-[18px] leading-[1.46] lg:mt-7 lg:text-[21px] lg:leading-[1.5]">
+          Sou filho e sobrinho de médico. Atuo em ortopedia e traumatologia, com ênfase nas doenças do quadril.
         </p>
-        <p className="max-w-lg text-lg text-blue">
-          Após formar-se, aos 24 anos de idade entrou para a residência de
-          ortopedia e traumatologia no reconhecido hospital federal de Ipanema,
-          dando seguimento aos estudos e ao sonho de ser cirurgião. Foram 3 anos
-          intensos de estudo e aprendizagem, participando de diversas cirurgias
-          e atendendo inúmeros pacientes com as mais variadas patologias
-          ortopédicas.
-        </p>
-        <p className="max-w-lg text-lg text-blue">
-          Ao término, foi aprovado no exame para ser membro da sociedade
-          brasileira de ortopedia e traumatologia. Após um período trabalhando e
-          adquirindo experiência, retornou ao hospital federal de Ipanema e
-          realizou o treinamento para tornar-se cirurgião de quadril. Concluiu
-          os estudos realizando o exame para ser membro da sociedade brasileira
-          de quadril. Hoje atua na área da ortopedia e traumatologia, com ênfase
-          no estudo das patologias do quadril.
-        </p>
-      </motion.div>
+
+        <dl className="mt-5 text-base leading-[1.3] lg:hidden">
+          {formacaoCelular.map((f) => (
+            <div key={f.rotulo} className="border-t border-tinta py-[9px]">
+              <dt className="text-tinta-suave">{f.rotulo}</dt>
+              <dd>{f.valor}</dd>
+            </div>
+          ))}
+        </dl>
+        <dl className="mt-8 hidden text-[18px] leading-[1.3] lg:block">
+          {formacaoDesktop.map((f) => (
+            <div key={f.rotulo} className="flex justify-between gap-6 border-t border-tinta py-[13px]">
+              <dt className="text-tinta-suave">{f.rotulo}</dt>
+              <dd className="text-right">{f.valor}</dd>
+            </div>
+          ))}
+        </dl>
+
+        <a
+          href={site.instagram.url}
+          className="mt-1.5 inline-block text-[17px] font-medium underline underline-offset-2 lg:mt-[18px] lg:text-[18px]"
+        >
+          {site.instagram.usuario}
+        </a>
+      </div>
     </section>
   );
 }
